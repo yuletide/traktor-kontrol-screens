@@ -92,7 +92,7 @@ Item {
 
         Text {
           id: keyText
-          text: deckInfo.hasKey ? utils.convertToCamelot(deckInfo.keyString) : "No key"          
+          text: (deckInfo.hasKey ? (prefs.camelotKey ? utils.convertToCamelot(deckInfo.keyString) : deckInfo.keyString) : "No key" )         
           font.pixelSize: 24
           font.family: "Roboto"
           font.weight: Font.Normal
