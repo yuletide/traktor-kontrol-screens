@@ -96,7 +96,7 @@ Item {
           font.pixelSize: 24
           font.family: "Roboto"
           font.weight: Font.Normal
-          color: colors.colorWhite
+          color: colors.musicalKeyColors[(utils.returnKeyIndex(deckInfo.keyString))]
           anchors.verticalCenter: parent.verticalCenter
           anchors.horizontalCenter: parent.horizontalCenter
         }
